@@ -10,9 +10,9 @@
 		FA25BAB5270501690009FBF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BAB4270501690009FBF2 /* AppDelegate.swift */; };
 		FA25BAB7270501690009FBF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BAB6270501690009FBF2 /* SceneDelegate.swift */; };
 		FA25BAB9270501690009FBF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BAB8270501690009FBF2 /* ViewController.swift */; };
-		FA25BABC270501690009FBF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA25BABA270501690009FBF2 /* Main.storyboard */; };
 		FA25BABE270501700009FBF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA25BABD270501700009FBF2 /* Assets.xcassets */; };
 		FA25BAC1270501700009FBF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA25BABF270501700009FBF2 /* LaunchScreen.storyboard */; };
+		FA25BAD0270509170009FBF2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25BACF270509170009FBF2 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		FA25BAB4270501690009FBF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA25BAB6270501690009FBF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA25BAB8270501690009FBF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA25BABB270501690009FBF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA25BABD270501700009FBF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA25BAC0270501700009FBF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA25BAC2270501700009FBF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA25BACF270509170009FBF2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,71 @@
 		FA25BAB3270501690009FBF2 /* FiveMag */ = {
 			isa = PBXGroup;
 			children = (
-				FA25BAB4270501690009FBF2 /* AppDelegate.swift */,
-				FA25BAB6270501690009FBF2 /* SceneDelegate.swift */,
-				FA25BAB8270501690009FBF2 /* ViewController.swift */,
-				FA25BABA270501690009FBF2 /* Main.storyboard */,
-				FA25BABD270501700009FBF2 /* Assets.xcassets */,
-				FA25BABF270501700009FBF2 /* LaunchScreen.storyboard */,
-				FA25BAC2270501700009FBF2 /* Info.plist */,
+				FA25BAC8270504010009FBF2 /* Resources */,
+				FA25BAC9270504140009FBF2 /* Source */,
 			);
 			path = FiveMag;
+			sourceTree = "<group>";
+		};
+		FA25BAC8270504010009FBF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BACB2705048A0009FBF2 /* Config */,
+				FA25BACA270504660009FBF2 /* Storyboards */,
+				FA25BABD270501700009FBF2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA25BAC9270504140009FBF2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BACD270504BB0009FBF2 /* Scenes */,
+				FA25BACC270504B20009FBF2 /* App */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FA25BACA270504660009FBF2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BABF270501700009FBF2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA25BACB2705048A0009FBF2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BAC2270501700009FBF2 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FA25BACC270504B20009FBF2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BAB4270501690009FBF2 /* AppDelegate.swift */,
+				FA25BAB6270501690009FBF2 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FA25BACD270504BB0009FBF2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BACE2705085D0009FBF2 /* MainController */,
+				FA25BAB8270501690009FBF2 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FA25BACE2705085D0009FBF2 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				FA25BACF270509170009FBF2 /* MainTabBarController.swift */,
+			);
+			path = MainController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +182,6 @@
 			files = (
 				FA25BAC1270501700009FBF2 /* LaunchScreen.storyboard in Resources */,
 				FA25BABE270501700009FBF2 /* Assets.xcassets in Resources */,
-				FA25BABC270501690009FBF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA25BAB9270501690009FBF2 /* ViewController.swift in Sources */,
+				FA25BAD0270509170009FBF2 /* MainTabBarController.swift in Sources */,
 				FA25BAB5270501690009FBF2 /* AppDelegate.swift in Sources */,
 				FA25BAB7270501690009FBF2 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +202,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA25BABA270501690009FBF2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA25BABB270501690009FBF2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA25BABF270501700009FBF2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 986NFG9Y4U;
-				INFOPLIST_FILE = FiveMag/Info.plist;
+				INFOPLIST_FILE = FiveMag/Resources/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FM.FiveMag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 986NFG9Y4U;
-				INFOPLIST_FILE = FiveMag/Info.plist;
+				INFOPLIST_FILE = FiveMag/Resources/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = FM.FiveMag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
